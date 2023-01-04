@@ -1,0 +1,76 @@
+.logo{
+  width: 100px;
+}
+.header{
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  background: #ACACAC;
+}
+nav ul li{
+  list-style-type: none;
+  margin: 0 15px;
+  font-size: 25px;
+}
+nav ul li a{
+  color: black;
+  transition: .35s;
+}
+nav ul li a:hover{
+  color: rgb(205, 4, 4);
+  transition: .35s;
+}
+nav ul{
+  position: relative;
+  /* border: 1px solid #B81907; */
+  padding: 10px 350px 10px 50px;
+  border-radius: 0 10px 10px 50px;
+}
+
+nav ul::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 90px;
+  border-radius: 50px;
+  background: #980300f8;
+  bottom: -20px;
+  right: 300px;
+  top: calc(50% - 45px);
+  border: 1px solid black;
+}
+.language{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  width: 300px;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden;
+  border: 1px solid black;
+  border-left: none;
+}
+.language button{
+  width: 25%;
+  height: 100%;
+  background: #980300e4;
+  color: whitesmoke;
+  font-size: 20px;
+}
+.language button:last-child{
+  width: 50%
+}
+.cart img{
+  width: 27px;
+  height: 23px;
+}

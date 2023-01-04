@@ -1,0 +1,22 @@
+.intro{
+  position: relative;
+  background:url('../../static/opening.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  font-size: 40px;
+  padding-top: 30vh;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-shadow: 0 0 10px black;
+}
+.intro:before{
+  position: absolute;
+  content: '';
+  background: rgba(0, 0, 0, 0.284);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}

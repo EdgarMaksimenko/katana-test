@@ -1,0 +1,22 @@
+.advantages{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.advantages__item {
+  width: 30%;
+}
+.advantages__item img{
+  width: 60px;
+  height: 60px;
+  display: block;margin: 0 auto;
+}
+.advantages__item .title{
+  font-size: 35px;
+  text-align: center;
+  margin: 15px 0;
+}
+.advantages__item .text{
+  font-size: 20px;
+  text-align: center;
+}
