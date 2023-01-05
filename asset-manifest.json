@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/katana-test/static/css/main.87bddef7.css",
-    "main.js": "/katana-test/static/js/main.ebd31712.js",
+    "main.css": "/katana-test/static/css/main.8956bc85.css",
+    "main.js": "/katana-test/static/js/main.413d56b0.js",
     "static/media/about_1.jpg": "/katana-test/static/media/about_1.f4869f4c842fd23fea9a.jpg",
     "static/media/about_4.jpg": "/katana-test/static/media/about_4.b3ddb61226a617d34d8d.jpg",
     "static/media/opening.jpg": "/katana-test/static/media/opening.abebaf5644aa678264f9.jpg",
@@ -44,11 +44,11 @@
     "static/media/time.svg": "/katana-test/static/media/time.56b53aff0dc35946dde4962a52121b64.svg",
     "static/media/point.svg": "/katana-test/static/media/point.e0a29627e15a0e8224285e0d646f0d3b.svg",
     "index.html": "/katana-test/index.html",
-    "main.87bddef7.css.map": "/katana-test/static/css/main.87bddef7.css.map",
-    "main.ebd31712.js.map": "/katana-test/static/js/main.ebd31712.js.map"
+    "main.8956bc85.css.map": "/katana-test/static/css/main.8956bc85.css.map",
+    "main.413d56b0.js.map": "/katana-test/static/js/main.413d56b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.87bddef7.css",
-    "static/js/main.ebd31712.js"
+    "static/css/main.8956bc85.css",
+    "static/js/main.413d56b0.js"
   ]
 }
