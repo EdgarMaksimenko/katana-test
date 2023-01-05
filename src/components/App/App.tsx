@@ -9,12 +9,16 @@ import Contacts from '../../pages/Contacts/Contacts';
 import Shop from '../../pages/Shop/Shop';
 import Footer from '../Footer/Footer';
 import Cart from '../Cart/Cart';
+import FormOrder from '../FormOrder/FormOrder';
+import PopUp from '../PopUp/PopUp';
 
 const App: FC = () => {
   return (
     <div className='body-wrapper'>
       <Header />
       <Cart/>
+      <FormOrder/>
+      <PopUp/>
       <div className={styles.content}>
         <Routes>
           <Route path='/' element={<Main />} />

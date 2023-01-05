@@ -5,12 +5,16 @@ interface ICartState {
   items: IProduct[];
   isOpened: boolean;
   total: number;
+  confirmed: boolean;
+  showPopUp: boolean;
 }
 
 const initialState: ICartState = {
   items: [],
   isOpened: false,
-  total: 0
+  total: 0,
+  confirmed: false,
+  showPopUp: false,
 }
 
 const cartSlice = createSlice({
@@ -19,7 +23,6 @@ const cartSlice = createSlice({
   reducers: {
     toggleCart(state){
       state.isOpened = !state.isOpened;
-      console.log(state.isOpened);
     },
     addToCart(state, action: PayloadAction<IProduct>){
       if(!state.items.find(item => item.id === action.payload.id)){
@@ -47,8 +50,22 @@ const cartSlice = createSlice({
         state.total -= currentItem!.price;
       }
     },
+    confirm(state){
+      state.isOpened = false;
+      state.confirmed = true;
+    },
+    closeFormOrder(state){
+      state.confirmed = false;
+    },
+    cartClear(state){
+      state.items = [];
+      state.total = 0;
+    },
+    togglePopUp(state){
+      state.showPopUp = !state.showPopUp;
+    }
   },
 })
 
-export const {toggleCart, addToCart, countPlus, countMinus, removeFromCart} = cartSlice.actions;
+export const {toggleCart, addToCart, countPlus, countMinus, removeFromCart, confirm, closeFormOrder, cartClear, togglePopUp} = cartSlice.actions;
 export default cartSlice.reducer;

@@ -86,3 +86,9 @@
 .products__item button:hover{
   box-shadow: 0 0 10px green, 0 0 10px green;
 }
+.products__item button.active{
+  background: grey;
+}
+.products__item button.active:hover{
+  box-shadow: none;
+}

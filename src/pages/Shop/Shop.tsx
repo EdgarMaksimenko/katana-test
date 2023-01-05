@@ -5,8 +5,13 @@ import { addToCart } from '../../store/slices/cartSlice';
 
 const Shop: FC = () => {
   const product = useAppSelector(state => state.productList.product);
+  const cartItems = useAppSelector(state => state.cartList.items);
   const dispatch = useAppDispatch();
   const [podType, setPodType] = React.useState(1000);
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={styles.shop}>
@@ -33,7 +38,10 @@ const Shop: FC = () => {
               <div className={styles.poructs__item__text}>
                 <p className={styles.taste}>{item.taste}</p>
                 <p className={styles.price}>{item.price} UAH</p>
-                <button onClick={() => dispatch(addToCart(item))}>В кошик</button>
+                <button
+                  onClick={() => dispatch(addToCart(item))}
+                  className={cartItems.find(el => el.id === item.id) ? styles.active : ' '}
+                >В кошик</button>
               </div>
             </div>
           ))

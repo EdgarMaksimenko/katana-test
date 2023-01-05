@@ -1,0 +1,80 @@
+.order{
+  visibility: hidden;
+  position: fixed;
+  width: 600px;
+  background: #191919;
+  z-index: 10000;
+  left: calc(50% - 300px);
+  top: 20vh;
+  padding: 20px;
+  border-radius: 30px;
+  transition: .4s;
+  opacity: 0;
+}
+.order.active{
+  visibility: visible;
+  transition: .4s;
+  opacity: 1;
+}
+.order .title{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 30px;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.order form{
+  margin: 0 auto;
+}
+.field{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.order form label{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.order form input{
+  margin: 0 auto;
+  width: 50%;
+  border-bottom: 1px solid whitesmoke;
+  color: whitesmoke;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.order form input::placeholder{
+  color: rgba(245, 245, 245, 0.499);
+}
+.input__error{
+  text-align: center;
+  padding: 10px;
+  color: rgba(255, 0, 0, 0.62);
+  font-size: 17px;
+}
+.confirm{
+  display: block;
+  margin-left: auto;
+  background: #69A026;
+  color: whitesmoke;
+  text-shadow: 0 0 10px black;
+  padding: 5px 20px;
+  font-size: 25px;
+  border-radius: 30px;
+}
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+  color: red;
+  font-size: 18px;
+  border: 1px solid red;
+  background: whitesmoke;
+}
